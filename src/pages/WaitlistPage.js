@@ -1,0 +1,68 @@
+import React from 'react';
+import { Container, Row, Col, Navbar, Image, Form, Button} from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import logo from '../component/Assets/images/logo.svg';
+import sectionimage from '../component/Assets/images/sectionimage.png';
+
+
+
+
+import '../component/Styles/formpage.css';
+
+
+function WaitlistPage() {
+
+    const navbrand ={
+        color: '#01C9AF',
+        fontSize:'1.5rem',
+      
+    }
+
+    return (
+        <Container fluid>
+            <Row >
+                <Col xs={12} md={6} lg={6} className="SecondSegment">
+                    <div>
+                        <Link style={{textDecoration: 'none',}} to="/">
+                            <Navbar.Brand>
+                                <Image src={logo} fluid />
+                                {' '}
+                                <span style={navbrand} className="navbranded">
+                                    <b>
+                                        VirtualSIMS
+                                    </b>
+                                </span>
+                            </Navbar.Brand>
+                        </Link>
+                    </div>
+
+                    <div>
+                        <h1 className="FormHeader">Join The Waiting List</h1>
+                        <p className="FormParagraph">ClassBook is currently in beta testing, but we are accepting a
+                            limited number of students to our waiting list. Enter your email address below to be
+                            notified when we open up enrollment.
+                        </p>
+
+                    </div>
+
+                    <Form className="form" style={{ paddingTop: 0.5 + 'rem', }}>
+
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                            <Form.Label className="formClasslabel">Email address <span style={{ color: 'red', }}>*</span></Form.Label>
+                            <Form.Control size="lg" className="custom-focus" style={{ fontFamily: 'nunito, sans-serif', backgroundColor: '#EDEDED', fontSize: 0.8 + 'rem' }} type="email" placeholder="Enter Your Mail" />
+                        </Form.Group>
+
+                        <Button style={{ fontFamily: 'nunito, sans-serif', fontSize: 0.85 + 'rem', marginTop: 1 + 'rem',backgroundColor:'#008C8C', width:100+'%' }} variant="primary" type="submit">
+                            Join List
+                        </Button>
+                    </Form>
+                </Col>
+                <Col xs={12} md={6} lg={6} className="FirstSegment" >
+                <Image src={sectionimage} style={{ width: 100 + '%', height:100+'vh', marginRight:0+'rem'}} fluid className="img-fluid" alt="banner-image" />
+                </Col>
+            </Row>
+        </Container>
+    );
+}
+
+export default WaitlistPage;

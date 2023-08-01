@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200&display=swap');
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+:root {
+  --main-color: #EAFCFE;
+  --deep-color: #056A77;
+  --active-color: #39B0C0;
+  --deep-black: #313232;
+  --main-black:#000000;
+  --main-faded:#F8F8F8;
+  --nav-bg:rgba(234, 252, 254, 0.80);
+  
+
+} 
+
+.loader {
+  width: 108px;
+  height: 16px;
+  background:
+    radial-gradient(circle 8px at 8px center, #437EF7 100%, transparent 0),
+    radial-gradient(circle 8px at 8px center, #437EF7 100%, transparent 0);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: ballX 1s linear infinite;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background:#437EF7;
+  inset:0;
+  margin:auto;
+  animation: moveX 1s cubic-bezier(0.5,300,0.5,-300) infinite;
+}
+@keyframes ballX {
+  0%,25%,50%,75%, 100%  {background-position: 25% 0,75% 0}
+  40%     {background-position: 25% 0,85% 0}
+  90%     {background-position: 15% 0,75% 0}
+}
+@keyframes moveX {
+  100% {transform:translate(0.15px)}
+}
+  
+    
+
+code {
+  font-family: 'Nunito Sans', sans-serif;
+}
+.NavBarBody{
+  width:100% !important;
+  right: 0;
+  left: 0;
+  background: var(--nav-bg);
+  backdrop-filter: blur(16px);
+ 
+}
+.outlinebutton{
+  color: #038EA0;
+  border-color:#00BDD5 !important;
+  background-color:none;
+  
+}
+.button{
+  color: #FFFFFF;
+  border-color:#038EA0 !important;
+  background-color:#038EA0 !important;
+}
+.outlinebutton:hover{
+  color: #FFFFFF;
+  border-color:#038EA0 !important;
+  background-color:#038EA0 !important;
+  
+}
+
+
+
+
+
+
+/* .hamburger:focus{
+
+} */
+.buttonbody{
+  padding-left:0rem;
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+.navcontainer{
+  padding-left:0.7rem !important;
+  padding-right:0.7rem !important;
+}
+.heroSection{
+  background: #EAFCFE;
+  right:0;
+  left:0;
+  width:100%;
+  height:auto;
+  padding-bottom:2rem;
+}
+.heroSectionRow{
+  padding-left:0.2rem;
+  padding-right:0.2rem;
+}
+.contentsection{
+  width:100%;
+  float: left;
+}
+.heroSectionLeftText{
+  min-height: auto;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.herosectionheadertext{
+  font-size:1.6rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight:bolder;
+  width:100%;
+
+}
+.herosectionheaderparagraphx1{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:0.87rem;
+  line-height:1.5rem;
+  color: #000000;
+  width:100%;
+}
+.herosectionheaderparagraph{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:0.87rem;
+  color: #000000;
+}
+
+
+.bannerimage{
+  width: 100%;
+  margin-top:1.0rem;
+  margin-bottom:-2.0rem;
+  object-fit: cover;
+}
+.nav-link{
+  font-size:0.8rem !important;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #313232 !important;
+  text-decoration: none !important;
+  margin-left:0rem;
+  margin-right:0rem;
+  
+}
+.active{
+  color: #00BDD5!important;
+  font-weight: 550;
+}
+
+.features{
+  padding-top:4rem;
+  background-color:#F8F8F8;
+  padding-bottom:4rem;
+}
+.featurerow{
+  
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  padding-top:1rem;
+  padding-bottom:1.2rem;  
+}
+.featurehead{
+  color: #038EA0;
+  font-size:1.2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight:bold;
+
+}
+
+.featureparagraph{
+  color: #5C5571;
+  font-size:0.9rem;
+  font-family: 'Nunito Sans', sans-serif;
+  width:95%;
+
+}
+.featureeachhead{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #313232;
+  font-weight:bold;
+}
+.featurecardbody{
+  background: #FCFCFC;
+  border-top: 2px solid #038EA0;
+  box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding-top:0rem;
+  padding-bottom:0rem;
+  padding-left:0.7rem;
+  padding-right:0.7rem;
+  margin-top:1rem;
+  width:100%;
+}
+.featureeachparagraph{
+  font-size:0.8rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #5C5571;
+}
+.whyus{
+  padding-top:4rem;
+}
+.whyusrow{
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  padding-top:1rem;
+  padding-bottom:2rem;  
+}
+.mobileapp{
+  padding-top:4rem;
+}
+.mainmobileapp{
+ width:100% !important;
+}
+.learnimg{
+  width:100%;
+}
+.col-content {
+  position: relative;
+  height: 100%; 
+}
+.mockup-img{
+  position: absolute;
+  top: -50%; /* Adjust this value as needed to move the image outside of the column */
+  left: 50%; /* Adjust this value to horizontally position the image */
+  transform: translate(-50%, 0); /* Center the image horizontally */
+  width: 100%;
+  display: none !important;
+}
+.button-store{
+  width:7rem;
+  margin-top:0.5rem;
+}
+.Bottomnav{
+  margin-top:9rem;
+  padding-left:0.7rem !important;
+  padding-right:0.7rem !important;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.bottomparagraph{
+  font-size:0.86rem;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #5C5571;
+  margin-top: 0.5rem;
+  line-height:21px;
+}
+.colbutton{
+  margin-right:0px !important;
+}
+.navlinkingclass{
+  float:left !important;
+}
+.navlinkingclass li{
+  margin-bottom:0.6rem;
+  font-family: 'Nunito Sans', sans-serif;
+
+}
+.newsletterparagraph{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:0.8rem;
+  color: #5C5571;
+}
+.newsletterhead{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size:0.9rem;
+  color: #5C5571;
+  margin-top:2rem;
+}
+.newsletterformbody{
+  width:100%;
+  float:left;
+  margin-top:2rem;
+}
+.svg-container {
+  width: 100%;
+  max-width: 800px; /* Optional: Set a maximum width for the SVG container */
+}
+
+.responsive-svg {
+  width: 100%;
+  height: auto;
+}
+.navbranded{
+  display: none !important;
+  font-family: 'Nunito Sans';
+  font-weight: bold;
+}
+
+
+
+@media (min-width: 300px)  {
+  .navbranded{
+    display: inline !important;
+  }
+  .button-store{
+    width:10rem;
+    margin-top:0.5rem;
+  }
+}
+
+
+
+
+
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {  
+    .button-store{
+      width:10rem;
+      margin-top:0.5rem;
+    }
+    .bannerimage{
+      width: 100%;
+      margin-top:1.0rem;
+      margin-bottom:-2.0rem;
+      object-fit: cover;
+    }
+    .herosectionheadertext{
+      font-size:2rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight:bold;
+      width:80%;
+    
+    }
+   
+  }
+  
+  
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) { 
+    .buttonbody{
+      padding-left:0rem;
+      margin-top:1rem;
+      margin-bottom:1rem;
+    }
+    .navcontainer{
+      padding-left:3.5rem !important;
+      padding-right:3.5rem !important;
+    }
+    .heroSection{
+      background: #EAFCFE;
+      right:0;
+      left:0;
+      width:100%;
+      height:auto;
+      padding-bottom:0rem;
+    }
+    .heroSectionRow{
+      padding-left:3.5rem;
+      padding-right:0rem;
+    }
+    .herosectionheadertext{
+      font-size:1.6rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight:bold;
+      width:100%;
+    
+    }
+    .heroSectionLeftText{
+      min-height: auto;
+    }
+    .herosectionheaderparagraphx1{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size:0.8rem;
+      color: #5C5571;
+      width:86%;
+    }
+   
+    .featurehead{
+      color: #038EA0;
+      font-size:2.1rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight:bold;
+    
+    }
+    .featureparagraph{
+      color: #5C5571;
+      font-size:0.9rem;
+      font-family: 'Nunito Sans', sans-serif;
+      width:40%;
+    
+    }
+    .featurerow{
+      padding-left:5rem;
+      padding-right:5rem;
+      padding-top:1rem;
+      padding-bottom:1.2rem;  
+    }
+    .whyusrow{
+      padding-left:6rem;
+      padding-right:6rem;
+      padding-top:1rem;
+      padding-bottom:1.2rem;  
+    }
+    .mainmobileapp{
+      width:85% !important;
+     }
+     .learnimg{
+      width:80%;
+    }
+    .mobileapp{
+      padding-top:7rem;
+    }
+    .mockup-img{
+      position: absolute;
+      top: -20%; /* Adjust this value as needed to move the image outside of the column */
+      left: 50%; /* Adjust this value to horizontally position the image */
+      transform: translate(-50%, 0); /* Center the image horizontally */
+      width: 80%;
+      display: inline !important;
+    }
+    .button-store{
+      width:10rem;
+      margin-top:1rem;
+    }
+    .colbutton{
+      margin-right:-32px !important;
+    }
+    .Bottomnav{
+      margin-top:9rem;
+      padding-left:3.5rem !important;
+      padding-right:3.5rem !important;
+      padding-top:3rem;
+      padding-bottom:3rem;
+    }
+    .navlinkingclass{
+      float:left !important;
+      margin-bottom:2rem;
+    }
+    .newsletterhead{
+      font-family: 'Nunito Sans', sans-serif;
+      font-size:0.9rem;
+      color: #5C5571;
+      margin-top:0rem;
+    }
+    .newsletterformbody{
+      width:100%;
+      float:left;
+      margin-top:2rem;
+    }
+    .nav-link{
+      font-size:0.8rem !important;
+      font-family: 'Nunito Sans', sans-serif;
+      color: #313232 !important;
+      text-decoration: none !important;
+      margin-left:0.4rem;
+      margin-right:0.4rem;
+      
+    }
+    .active{
+      color: #00BDD5!important;
+      font-weight: 550;
+    }
+    .bannerimage{
+      width: 100%;
+      margin-top:1.0rem;
+      margin-bottom:0.0rem;
+      object-fit: cover;
+    }
+    
+    
+     
+    
+    
+   
+    
+    
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) { 
+    .buttonbody{
+      padding-left:2rem;
+      margin-top:0rem;
+      margin-bottom:0rem;
+    }
+    .navcontainer{
+      padding-left:5rem !important;
+      padding-right:5rem !important;
+    }
+    .heroSectionRow{
+      padding-left:4rem;
+      padding-right:0rem;
+    }
+    .heroSectionLeftText{
+      min-height:auto;
+    }
+    .herosectionheadertext{
+      font-size:2rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight:bold;
+      width:80%;
+    
+    }
+    .featurerow{
+      padding-left:10%;
+      padding-right:10%;
+      padding-top:1rem;
+      padding-bottom:1.2rem;  
+    }
+    .mockup-img{
+      position: absolute;
+      top: -40%; /* Adjust this value as needed to move the image outside of the column */
+      left: 50%; /* Adjust this value to horizontally position the image */
+      transform: translate(-50%, 0); /* Center the image horizontally */
+      width: 60%;
+    }
+    .navlinkingclass{
+      float:right !important;
+      margin-bottom:2rem;
+    }
+    .newsletterformbody{
+      width:80%;
+      float:right;
+      margin-top:0rem;
+    }
+    .Bottomnav{
+      margin-top:9rem;
+      padding-left:5rem !important;
+      padding-right:5rem !important;
+      padding-top:3rem;
+      padding-bottom:3rem;
+    }
+   
+  }
+  
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .mockup-img{
+      position: absolute;
+      top: -50%; /* Adjust this value as needed to move the image outside of the column */
+      left: 50%; /* Adjust this value to horizontally position the image */
+      transform: translate(-50%, 0); /* Center the image horizontally */
+      width: 60%;
+      display: inline !important;
+    }
+    .herosectionheadertext{
+      font-size:2.3rem;
+      font-family: 'Nunito Sans', sans-serif;
+      font-weight:900;
+      width:85%;
+    
+    }
+   
+  
+  }
+
+  @media (min-width: 1400px) {
+    .navcontainer{
+      padding-left:15% !important;
+      padding-right:15% !important;
+    }
+    .heroSectionRow{
+      padding-left:15%;
+      padding-right:0%;
+    }
+    .counterRow{
+      padding-left:15%;
+      padding-right:15%;
+      padding-top:2rem;
+      padding-bottom:1.2rem;
+    }
+    .featurerow{
+      padding-left:20%;
+      padding-right:20%;
+      padding-top:1rem;
+      padding-bottom:1.2rem;  
+    }
+    .whyusrow{
+      padding-left:15%;
+      padding-right:15%;
+      padding-top:1rem;
+      padding-bottom:2rem;  
+    }
+    .mainmobileapp{
+      width:70% !important;
+     }
+
+     .Bottomnav{
+      margin-top:9rem;
+      padding-left:15% !important;
+      padding-right:15% !important;
+      padding-top:3rem;
+      padding-bottom:3rem;
+    }
+
+    .mockup-img{
+      position: absolute;
+      top: -40%; /* Adjust this value as needed to move the image outside of the column */
+      left: 50%; /* Adjust this value to horizontally position the image */
+      transform: translate(-50%, 0); /* Center the image horizontally */
+      width: 50%;
+      display: inline !important;
+    }
+  }

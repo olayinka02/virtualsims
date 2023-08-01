@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200&display=swap');
+.FirstSegment{
+    background-color: #E0EDFF;
+    height:100vh;
+    padding-left:0rem;
+    padding-right:0rem;
+    display: none;
+
+}
+.SecondSegment{
+    background-image: url('../Assets/images/upperbg.svg'), url('../Assets/images/lowerbg.svg');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #ffffff; 
+    height:100vh;
+    padding-top: 1.5rem;
+    padding-left:5%;
+    padding-right:5%;
+    display: inline;
+}
+
+.innerCarouselPage{
+    margin-top:5rem;
+}
+.headinglogin{
+    font-size:1.4rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight:bold;
+    color: #0D6EFD;
+
+}
+.paragraphlogin{
+    font-size:0.8rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #313232 !important;
+    line-height:1.4rem;
+}
+/* Override the default Bootstrap carousel indicators */
+.carousel-indicators{
+    margin-left:0% !important;
+    justify-content: left !important;
+    margin-bottom: 0 !important;
+    margin-top: 10px !important;
+
+}
+.carousel-indicators button {
+    background-color: #B0C0D7 !important;
+    border: 0px !important;
+    border-radius: 50% !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 4px !important;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+  /* Active indicator style */
+  .carousel-indicators .active {
+    background-color: #0D6EFD !important;
+  }
+  .displayOnMobile{
+    display:inline;
+  }
+  .FormHeader{
+    font-size:2rem;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    color: #008C8C !important;
+    margin-top:2rem;
+  }
+  .FormParagraph{
+    font-size:0.8rem;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #313232 !important;
+    line-height:1.4rem;
+  }
+  
+  .formClasslabel{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size:0.85rem;
+    color: #313232 !important;
+    font-weight: 450;
+  }
+  .custom-focus:focus {
+    border-color: #ebfdff ; /* Replace "red" with your desired color */
+    box-shadow: 0 0 0 0.05rem #04a6be ; /* Optionally adjust the box shadow */
+  }
+
+
+
+
+
+@media (min-width: 576px) {
+
+ }
+
+
+@media (min-width: 768px) {
+    .FirstSegment{
+        background-color: #E0EDFF;
+        height:100vh;
+        padding-left:0rem;
+        padding-right:0rem;
+        display: inline;
+        
+    }
+    .SecondSegment{
+        background-image: url('../Assets/images/upperbg.svg'), url('../Assets/images/lowerbg.svg');
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #ffffff; 
+        height:100vh;
+        padding-top: 1.5rem;
+        padding-left:6%;
+        padding-right:6%;
+        display: inline;
+    }
+    .displayOnMobile{
+        display:none;
+      }
+    
+    
+
+ }
+
+
+@media (min-width: 992px) { 
+    .FirstSegment{
+        background-color: #E0EDFF;
+        height:100vh;
+        padding-left:0rem;
+        padding-right:0rem;
+        display: inline;
+        
+    }
+    .SecondSegment{
+        background-image: url('../Assets/images/upperbg.svg'), url('../Assets/images/lowerbg.svg');
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #ffffff; 
+        height:100vh;
+        padding-top: 1.5rem;
+        padding-left:7%;
+        padding-right:7%;
+        display: inline;
+    }
+    .displayOnMobile{
+        display:none;
+      }
+    
+    
+
+ }
+
+
+@media (min-width: 1200px) {
+    .FirstSegment{
+        background-color: #E0EDFF;
+        height:100vh;
+        display: inline;
+        padding-left:0rem;
+        padding-right:0rem;
+        
+    }
+    .SecondSegment{
+        background-image: url('../Assets/images/upperbg.svg'), url('../Assets/images/lowerbg.svg');
+        background-position: top left, bottom right;
+        background-repeat: no-repeat, no-repeat;
+        background-color: #ffffff; 
+        height:100vh;
+        padding-top: 1.5rem;
+        padding-left:9%;
+        padding-right:9%;
+        display: inline;
+    }
+    .displayOnMobile{
+        display:none;
+      }
+    
+    
+
+  }
+
+
+@media (min-width: 1400px) { 
+
+ }
